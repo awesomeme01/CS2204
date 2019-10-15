@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PizzaHeaven | Home</title>
+	<meta charset="utf-8">
+	<meta name="description" content="CS2204 CW1 HomePage for Pizzeria">
+  	<meta name="keywords" content="CS2204, CW1, HomePage, Pizzeria, Shabdan, tasty, delicious, margaritta, pepperoni, 4 seasons">
+  	<meta name="author" content="MEDET UULU Shabdanbek">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header id="header">
+		<div class="left-block" id="logo-block-top">
+			<a href="#">
+				<img src="media/pizza-64.png" alt="pizzaLogo">
+				<h1>PizzaHeaven</h1>
+			</a>
+		</div>
+		<div class="right-block" id="order-block">
+			<a href="order.html" target="newtab">
+				<h2>Order now</h2>
+				<img src="media/orderIcon.png" alt="pizzaLogo">
+			</a>	
+		</div>
+	</header>
+	<section class="signature-main-block" id="signature-dishes">
+		<h1>SIGNATURE DISHES</h1>
+		<div class="signature-slider">
+			<div class="slider-image-block">
+				<img width="300" src="media/Pepperoni_pizza.jpg" alt="Pepperoni-pizza-image">
+				<img width="300" src="media/__(a_picture_by_david_adam_kess,_amazing_pizza,_pic._aaa1a05_uthor_David_Adam_Kess,_Photography_by_David_Adam_Kess.jpg" alt="margaritta-pizza-image">
+			</div>
+			<!-- ...other image-blocks here should be loaded by Javascript later onn-->
+		</div>
+	</section>
+	<section class="video-main-block">
+		<h1>Only this weekend, have a chance to try our new dish!</h1>
+		<video autoplay controls width="300" loop><!-- remove 'controls'  later-->
+			<source src="media/newDish.mp4" type="video/mp4">
+			Your browser doesn't support video playback(
+		</video>
+	</section>
+	<section class="special-offer-main-block">
+		<h1>SPECIAL OFFERS</h1>
+		<div class="special-offer-slider">
+			<div class="slider-image-block">
+				<img width="300" src="media/PizzaSpecial.jpg" alt="specialofferimage">
+			</div>
+			<!-- ...other image-blocks here should be loaded by javascript later on -->
+		</div>		
+	</section>
+	<section class="reserve-main-block">
+		<form action="/url">
+			<fieldset>
+				<legend>Reservation</legend>
+				<div>
+					<label for="date">Date: </label>
+					<input type="Date" id="date" name="date">
+				</div>
+				<div>
+					<label for="timeSelect">Time: </label>
+					<select name="timeSelect" id="timeSelect">
+						<option value="">08:00-10:00</option>
+						<option value="">10:00-12:00</option>
+						<option value="">12:00-14:00</option>
+						<option value="">14:00-16:00</option>
+						<option value="">16:00-18:00</option>
+						<option value="">18:00-20:00</option>
+						<option value="">20:00-22:00</option>
+						<option value="">22:00-24:00</option>
+					</select>
+				</div>
+				<div>
+					<label for="guest">No. of Guests: </label>
+					<input type="number" name="guests_number" min=1 max=10 id="guest">
+				</div>
+				<input type="submit" name="check" value= "Check availability">
+				<input type="reset" name="reset">
+			</fieldset>
+		</form>
+	</section>
+
+	<section id="information-main-block">
+		<div class = "info-block" id="address-block">
+			<h1>Address</h1>
+			<p>83 Tat Chee Avenue,<br>Kownloon,<br>Hong Kong</p>
+		</div>
+		<div class = "info-block" id="contact-block">
+			<h1>Contact</h1>
+			<p>6761-0345</p>
+		</div>
+		<div class = "info-block" id="working-hours-block">
+			<h2 >Working hours</h2>
+			<ul class="working-list">
+				<li>
+					<h4>Monday - Friday</h4>
+					<h6>8:00 - 24:00</h6>
+				</li>
+				<li>
+					<h4>On weekends</h4>
+					<h6>24 hours</h6>
+				</li>
+			</ul>
+		</div>
+		<div class = "info-block" id="location-block">
+			<h1>Location</h1>
+			<!-- Google Map -->
+		</div>
+	</section>
+	<footer>
+		<div class="footer-logo-block" id="logo-block">
+			<a href="#">
+				<img src="media/pizza-64.png" alt="pizzaLogo">
+				<h1>PizzaHeaven</h1>
+			</a>
+		</div>
+		<h4 class="copyright-text">&copy; CityU 2019 sources of images and text from <a href="https://commons.wikimedia.org" target="newtab">Wikimedia COmmons</a> and Courtes of Icon pack by <a href = "https://icons8.com" target="newtab">Icons8</a></h4>
+
+		<h4>This page is designed by SHabdanbek MEDET UULU. SID 55966577. Tap <a href="design.html" target="newtab">here</a> to view design page.</h4>
+	</footer> 
+</body>
+</html>
